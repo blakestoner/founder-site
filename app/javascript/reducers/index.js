@@ -1,8 +1,8 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from "redux";
 
-import { postsReducer } from './posts';
-import { contactsReducer } from './contacts';
-import { thingsReducer } from './things';
+import { postsReducer } from "./posts";
+import { contactsReducer } from "./contacts";
+import { thingsReducer } from "./things";
 
 const rootReducer = combineReducers({
     posts: postsReducer,

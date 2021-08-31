@@ -1,3 +1,3 @@
-export * from './things';
-export * from './posts';
-export * from './contacts'
+export * from "./things";
+export * from "./posts";
+export * from "./contacts";

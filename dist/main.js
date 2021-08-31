@@ -56,13 +56,13 @@
     /******/
     /******/ // define __esModule on exports
     /******/ __webpack_require__.r = function (exports) {
-        /******/ if (typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+        /******/ if (typeof Symbol !== "undefined" && Symbol.toStringTag) {
             /******/ Object.defineProperty(exports, Symbol.toStringTag, {
-                value: 'Module',
+                value: "Module",
             });
             /******/
         }
-        /******/ Object.defineProperty(exports, '__esModule', { value: true });
+        /******/ Object.defineProperty(exports, "__esModule", { value: true });
         /******/
     };
     /******/
@@ -76,18 +76,18 @@
         /******/ if (mode & 8) return value;
         /******/ if (
             mode & 4 &&
-            typeof value === 'object' &&
+            typeof value === "object" &&
             value &&
             value.__esModule
         )
             return value;
         /******/ var ns = Object.create(null);
         /******/ __webpack_require__.r(ns);
-        /******/ Object.defineProperty(ns, 'default', {
+        /******/ Object.defineProperty(ns, "default", {
             enumerable: true,
             value: value,
         });
-        /******/ if (mode & 2 && typeof value != 'string')
+        /******/ if (mode & 2 && typeof value != "string")
             for (var key in value)
                 __webpack_require__.d(
                     ns,
@@ -105,12 +105,12 @@
         /******/ var getter =
             module && module.__esModule
                 ? /******/ function getDefault() {
-                      return module['default'];
+                      return module["default"];
                   }
                 : /******/ function getModuleExports() {
                       return module;
                   };
-        /******/ __webpack_require__.d(getter, 'a', getter);
+        /******/ __webpack_require__.d(getter, "a", getter);
         /******/ return getter;
         /******/
     };
@@ -121,24 +121,24 @@
     };
     /******/
     /******/ // __webpack_public_path__
-    /******/ __webpack_require__.p = '';
+    /******/ __webpack_require__.p = "";
     /******/
     /******/
     /******/ // Load entry module and return exports
     /******/ return __webpack_require__(
-        (__webpack_require__.s = './src/index.js')
+        (__webpack_require__.s = "./src/index.js")
     );
     /******/
 })(
     /************************************************************************/
     /******/ {
-        /***/ './src/index.js':
+        /***/ "./src/index.js":
             /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
             /*! no static exports found */
             /***/ function (module, exports) {
-                eval('\n\n//# sourceURL=webpack:///./src/index.js?');
+                eval("\n\n//# sourceURL=webpack:///./src/index.js?");
 
                 /***/
             },

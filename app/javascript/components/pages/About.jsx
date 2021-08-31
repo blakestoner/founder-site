@@ -1,8 +1,8 @@
-import React from 'react';
-import { Col, Container, Image, Row } from 'react-bootstrap';
-import Layout from '../Layout';
+import React from "react";
+import { Col, Container, Image, Row } from "react-bootstrap";
+import Layout from "../Layout";
 
-import Blake from '../../../assets/images/blake.jpg';
+import Blake from "../../../assets/images/blake.jpg";
 
 export default function About() {
     return (

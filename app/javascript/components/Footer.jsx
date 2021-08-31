@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { Container, Button, Modal, Form } from 'react-bootstrap';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
-import { addNewContact } from '../actions';
+import React, { useState } from "react";
+import { Container, Button, Modal, Form } from "react-bootstrap";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { addNewContact } from "../actions";
 
 function Footer({ addNewContact }) {
     const [show, setShow] = useState(false);
     const [form, setForm] = useState({
-        name: '',
-        email: '',
-        message: '',
+        name: "",
+        email: "",
+        message: "",
     });
 
     const handleClose = () => setShow(false);

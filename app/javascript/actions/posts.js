@@ -1,8 +1,8 @@
-export const GET_POSTS_REQUEST = 'GET_POSTS_REQUEST';
-export const GET_POSTS_SUCCESS = 'GET_POSTS_SUCCESS';
+export const GET_POSTS_REQUEST = "GET_POSTS_REQUEST";
+export const GET_POSTS_SUCCESS = "GET_POSTS_SUCCESS";
 
 export function getPosts() {
-    console.log('getPosts() Action!!');
+    console.log("getPosts() Action!!");
 
     return (dispatch) => {
         dispatch({ type: GET_POSTS_REQUEST });

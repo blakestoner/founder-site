@@ -1,8 +1,8 @@
-export const GET_THINGS_REQUEST = 'GET_THINGS_REQUEST';
-export const GET_THINGS_SUCCESS = 'GET_THINGS_SUCCESS';
+export const GET_THINGS_REQUEST = "GET_THINGS_REQUEST";
+export const GET_THINGS_SUCCESS = "GET_THINGS_SUCCESS";
 
 export function getThings() {
-    console.log('getThings() Action!!');
+    console.log("getThings() Action!!");
 
     return (dispatch) => {
         dispatch({ type: GET_THINGS_REQUEST });

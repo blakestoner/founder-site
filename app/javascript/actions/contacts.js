@@ -1,10 +1,10 @@
-export const GET_CONTACTS_REQUEST = 'GET_CONTACTS_REQUEST';
-export const GET_CONTACTS_SUCCESS = 'GET_CONTACTS_SUCCESS';
-export const ADD_CONTACT_REQUEST = 'ADD_CONTACT_REQUEST';
-export const ADD_CONTACT_SUCCESS = 'ADD_CONTACT_SUCCESS';
+export const GET_CONTACTS_REQUEST = "GET_CONTACTS_REQUEST";
+export const GET_CONTACTS_SUCCESS = "GET_CONTACTS_SUCCESS";
+export const ADD_CONTACT_REQUEST = "ADD_CONTACT_REQUEST";
+export const ADD_CONTACT_SUCCESS = "ADD_CONTACT_SUCCESS";
 
 export function getContacts() {
-    console.log('getContacts() Action!!');
+    console.log("getContacts() Action!!");
 
     return (dispatch) => {
         dispatch({ type: GET_CONTACTS_REQUEST });
@@ -24,18 +24,18 @@ export function getContactsSuccess(json) {
 }
 
 export function addNewContact(contact) {
-    console.log('addNewContact() Action!!');
+    console.log("addNewContact() Action!!");
 
     const headers = {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
+        "Content-Type": "application/json",
+        Accept: "application/json",
     };
 
     return (dispatch) => {
         dispatch({ type: ADD_CONTACT_REQUEST });
 
         return fetch(`contacts`, {
-            method: 'POST',
+            method: "POST",
             headers,
             body: JSON.stringify(contact),
         })

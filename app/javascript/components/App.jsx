@@ -1,11 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { Provider } from 'react-redux';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Provider } from "react-redux";
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Blog from './pages/Blog';
-import configureStore from '../configureStore';
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Blog from "./pages/Blog";
+import configureStore from "../configureStore";
 
 const store = configureStore();
 

@@ -1,10 +1,10 @@
-import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import Layout from '../Layout';
-import { SocialList } from '../SocialList';
-import Typed from 'react-typed';
+import React from "react";
+import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import Layout from "../Layout";
+import { SocialList } from "../SocialList";
+import Typed from "react-typed";
 
-import VngleImg from '../../../assets/images/vngle.png';
+import VngleImg from "../../../assets/images/vngle.png";
 
 export default function Home() {
     return (
@@ -15,7 +15,7 @@ export default function Home() {
                         className="d-flex align-items-center justify-content-center justify-content-md-start"
                         md={6}
                     >
-                        <div style={{ height: 'fit-content' }}>
+                        <div style={{ height: "fit-content" }}>
                             <p className="lead mb-1 fw-bold">
                                 Founder of Vngle
                             </p>
@@ -25,9 +25,9 @@ export default function Home() {
                             <p className="lead">
                                 <Typed
                                     strings={[
-                                        'Social Entrepreneur',
-                                        'Grassroots Advocate',
-                                        'Tech Enthusiast',
+                                        "Social Entrepreneur",
+                                        "Grassroots Advocate",
+                                        "Tech Enthusiast",
                                     ]}
                                     typeSpeed={40}
                                 />
@@ -36,7 +36,7 @@ export default function Home() {
                         </div>
                     </Col>
                     <Col md={6}>
-                        <Card style={{ width: '80%', margin: '0 auto' }}>
+                        <Card style={{ width: "80%", margin: "0 auto" }}>
                             <Card.Img variant="top" src={VngleImg} />
                             <Card.Body>
                                 <Card.Title className="display-5 mb-4">

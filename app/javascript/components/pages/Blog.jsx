@@ -1,11 +1,11 @@
-import React, { useEffect } from 'react';
-import { FiChevronRight } from 'react-icons/fi';
-import { Container, Button, Row, Col } from 'react-bootstrap';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
+import React, { useEffect } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
-import Layout from '../Layout';
-import { getPosts } from '../../actions';
+import Layout from "../Layout";
+import { getPosts } from "../../actions";
+import Post from "../Post";
 
 function BlogPage({ posts, getPosts }) {
     useEffect(() => {
@@ -22,19 +22,11 @@ function BlogPage({ posts, getPosts }) {
                 <Row className="gy-5">
                     {posts.map((post, i) => (
                         <Col md={4} key={i}>
-                            <div>
-                                <h2>{post.title}</h2>
-                                <p>{post.summary}</p>
-                                <Button
-                                    href={post.link}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    variant="warning"
-                                >
-                                    View more
-                                    <FiChevronRight />
-                                </Button>
-                            </div>
+                            <Post
+                                title={post.title}
+                                summary={post.summary}
+                                link={post.link}
+                            />
                         </Col>
                     ))}
                 </Row>
