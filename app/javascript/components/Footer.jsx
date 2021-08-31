@@ -32,7 +32,7 @@ function Footer({ addNewContact }) {
         <>
             <footer className="bg-warning py-3">
                 <Container>
-                    <div className="d-flex justify-content-between">
+                    <div className="d-flex justify-content-between align-items-center">
                         <div>Made with ☮️❤️🍜☕️ by Blake</div>
                         <Button variant="dark" onClick={handleShow}>
                             Let's connect!

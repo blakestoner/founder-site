@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Container, Button } from 'react-bootstrap';
+import React, { useEffect } from 'react';
+import { FiChevronRight } from 'react-icons/fi';
+import { Container, Button, Row, Col } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
@@ -13,12 +14,30 @@ function BlogPage({ posts, getPosts }) {
 
     return (
         <Layout>
-            <Container>
-                <ul>
+            <Container className="py-5">
+                <h1 className="mb-4">
+                    <span className="highlight">Blog</span>
+                </h1>
+
+                <Row className="gy-5">
                     {posts.map((post, i) => (
-                        <li key={i}>{post.summary}</li>
+                        <Col md={4} key={i}>
+                            <div>
+                                <h2>{post.title}</h2>
+                                <p>{post.summary}</p>
+                                <Button
+                                    href={post.link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    variant="warning"
+                                >
+                                    View more
+                                    <FiChevronRight />
+                                </Button>
+                            </div>
+                        </Col>
                     ))}
-                </ul>
+                </Row>
             </Container>
         </Layout>
     );

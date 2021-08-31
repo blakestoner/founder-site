@@ -33,3 +33,10 @@ code {
     flex-direction: column;
     min-height: 100vh;
 }
+
+.highlight {
+    background-image: linear-gradient(rgb(255, 204, 53), rgb(255, 204, 53));
+    background-repeat: no-repeat;
+    background-size: 100% 0.4em;
+    background-position: 0px 88%;
+}

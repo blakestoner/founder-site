@@ -20,23 +20,14 @@ export default function Home() {
                                 Founder of Vngle
                             </p>
                             <h1 className="display-1 fw-bold">
-                                <span
-                                    style={{
-                                        backgroundImage:
-                                            'linear-gradient(rgb(255, 204, 53), rgb(255, 204, 53))',
-                                        backgroundRepeat: 'no-repeat',
-                                        backgroundSize: '100% 0.4em',
-                                        backgroundPosition: '0px 88%',
-                                    }}
-                                >
-                                    Blake Stoner
-                                </span>
+                                <span className="highlight">Blake Stoner</span>
                             </h1>
                             <p className="lead">
                                 <Typed
                                     strings={[
-                                        'Here you can find anything',
-                                        'I love Vngle',
+                                        'Social Entrepreneur',
+                                        'Grassroots Advocate',
+                                        'Tech Enthusiast',
                                     ]}
                                     typeSpeed={40}
                                 />
