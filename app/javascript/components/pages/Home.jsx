@@ -24,6 +24,7 @@ export default function Home() {
                             </h1>
                             <p className="lead">
                                 <Typed
+                                    loop
                                     strings={[
                                         "Social Entrepreneur",
                                         "Grassroots Advocate",
